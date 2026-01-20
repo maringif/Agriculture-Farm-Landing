@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriculture & Farm Landing</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script></head>
 <body>
 
     <header class="header">
         <div class="header__inner">
-            <img src="./images/logo.svg" alt="logo" claas="logo heater__logo">
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a href="#" class="header__link">Home</a></li>
-                    <li class="header__item"><a href="#" class="header__link">About Us</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Solutions</a></li>
-                    <li class="header__item"><a href="#" class="header__link">Investors</a></li>
-                </ul>
-            </nav>
+            <div class="header__logo-wrapper">
+                <img src="./images/header_logo.svg" alt="logo" class="logo header__logo">
+            </div>
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link"><img src="./images/home.svg" alt="home" class="header__icon-home">Home</a></li>
+                <li class="header__item"><a href="#" class="header__link">About Us</a></li>
+                <li class="header__item"><a href="#" class="header__link">Solutions</a></li>
+                <li class="header__item"><a href="#" class="header__link">Investors</a></li>
+            </ul>
             <div class="header__actions">
-                <a href="/login" class="header__link header__link--sign-in">Sign In</a>
+                <a href="/login" class="header__link--sign-in">Sign In</a>
                 <button type="button" class="btn btn--primary">Sign up Free</button>
             </div>
         </div>
@@ -29,15 +33,19 @@
     <main class="main">
         <section class="hero">
             <div class="hero__inner">
-                <p class="hero__subtitle"><span class="hero__subtitle--green"></span>top notch webinar platform</p>
+                <p class="hero__subtitle"><span class="hero__subtitle--green"></span>Top Notch Webinar Platform</p>
                 <h1 class="hero__title">Regenerating The Earth <br> With Nano-Biotechnology</h1>
-                <div class="hero__actions">
-                    <button class="btn btn--dark">Get Started</button>
-                </div>
-                <div class="hero__image-unit">
-                    <img src="./images/farm.svg" alt="Main Visual" class="hero__img">
+                <div class="hero__button">
+                    <button class="btn hero__btn--dark">Get Started <img src="./images/hero_Arrow.svg" alt="arrow" class="hero__image-arrow"></button>
                 </div>
             </div>
+            <div class="hero__image-unit">
+                <img src="./images/farm.svg" alt="Main Visual" class="hero__img-farm">
+            </div>
+            <img src="./images/hero_Star-1.svg" alt="star-1" class="hero__img-star--1">
+            <img src="./images/hero_Star-2.svg" alt="star-2" class="hero__img-star--2">
+            <img src="./images/hero_Star-3.svg" alt="star-3" class="hero__img-star--3">
+            <img src="./images/hero_Star-4.svg" alt="star-4" class="hero__img-star--4">
         </section>
 
         <section class="stats">
@@ -71,35 +79,35 @@
                 <div class="solutions__grid">
                     <article class="card">
                         <div class="card__image-wrapper">
-                            <img src="https://placehold.jp/24/cccccc/333333/400x500.png?text=Solution+01" alt="" class="card__img">
+                            <img src="./images/solutions_farm1.svg" alt="farm1" class="card__img">
                         </div>
-                        <div>
+                        <div class="card__image--bottom">
                             <h3 class="card__title">03</h3>
                             <h3>Technology Irrigation</h3>
                         </div>
                     </article>
                     <article class="card">
                         <div class="card__image-wrapper">
-                            <img src="https://placehold.jp/24/cccccc/333333/400x500.png?text=Solution+02" alt="" class="card__img">
-                        </div>
-                        <div>
-                            <h3 class="card__title">03</h3>
+                            <img src="./images/solutions_farm2.png" alt="farm2" class="card__img">
+                        </div> 
+                        <div class="card__image--bottom">
+                            <h3 class="card__title">02</h3>
                             <h3>Organic Fertilizer</h3>
                         </div>                    </article>
                     <article class="card">
                         <div class="card__image-wrapper">
-                            <img src="https://placehold.jp/24/cccccc/333333/400x500.png?text=Solution+03" alt="" class="card__img">
+                            <img src="./images/solutions_farm3.png" alt="farm3" class="card__img">
                         </div>
-                        <div>
+                        <div class="card__image--bottom">
                             <h3 class="card__title">03</h3>
                             <h3>Technology Irrigation</h3>
                         </div>                    </article>
                     <article class="card">
                         <div class="card__image-wrapper">
-                            <img src="https://placehold.jp/24/cccccc/333333/400x500.png?text=Solution+04" alt="" class="card__img">
+                            <img src="./images/solutions_farm4.svg" alt="farm4" class="card__img">
                         </div>
-                        <div>
-                            <h3 class="card__title">03</h3>
+                        <div class="card__image--bottom">
+                            <h3 class="card__title">04</h3>
                             <h3> Agricultural Monitoring</h3>
                         </div>                    </article>
                 </div>
@@ -107,9 +115,16 @@
         </section>
 
         <section class="subscription">
-            <div class="subscription_inner">
-                <img src="https://placehold.jp/24/2d5a27/ffffff/1710x800.png?text=Main+Visual+Image" alt="Main Visual" class="hero__overlap-image">
-                <h2>Collaborate and learn from industry experts and enthusiasts</h2>
+            <div class="subscription__inner">
+                <img src="./images/subscription_farm.svg" alt="Main Visual" class="subscription__overlap-image">
+                <h2 class="subscription__title">Collaborate and learn from industry experts and enthusiasts</h2>
+                <div class="subscription__detail">
+                    <div class="subscription__detail--left">
+                        <img src="./images/subscription_location.svg" class="subscription__image-map">
+                        <p class="subscription__map">Ponorogo, Indonesia</p>
+                    </div>
+                    <button class="subscription__detail--right">Get Started<img src="./images/subscription_arrow.svg" class="subscription__img-arrow"></button>
+                </div>
             </div>
         </section>
 
@@ -117,22 +132,23 @@
             <div class="news__inner">
                 <div class="news__header">
                     <h2 class="news__heading">Next-Gen Solutions For <br> Optimal Crop Growth</h2>
-                    <p class="news__description">Stay updated with our latest agricultural insights and innovations.</p>
+                    <p class="news__description">We provide cutting-edge services to help farmers maximize crop yields. Our precision 
+                        farming, crop monitoring, and automation solutions aim to revolutionize agriculture.</p>
                 </div>
                 <div class="news__grid">
                     <article class="post">
-                        <img src="https://placehold.jp/24/cccccc/333333/550x400.png?text=Post+01" alt="" class="post__img">
-                        <h3 class="post__title">Farming Precision</h3>
+                        <img src="./images/news_farm1.svg" alt="farm1" class="post__img">
+                        <h2 class="post__title">Farming Precision</h3>
                         <p class="post__text">Our latest research on soil health and crop monitoring for better yield.</p>
                     </article>
                     <article class="post">
-                        <img src="https://placehold.jp/24/cccccc/333333/550x400.png?text=Post+02" alt="" class="post__img">
-                        <h3 class="post__title">Crop Surveillance</h3>
+                        <img src="./images/news_farm2.svg" alt="farm2" class="post__img">
+                        <h2 class="post__title">Crop Surveillance</h3>
                         <p class="post__text">Using drones and AI to detect pests before they spread.</p>
                     </article>
                     <article class="post">
-                        <img src="https://placehold.jp/24/cccccc/333333/550x400.png?text=Post+03" alt="" class="post__img">
-                        <h3 class="post__title">Automated Farming</h3>
+                        <img src="./images/news_farm3.svg" alt="farm3" class="post__img">
+                        <h2 class="post__title">Automated Farming</h3>
                         <p class="post__text">How automation is reducing labor costs in modern farms.</p>
                     </article>
                 </div>
@@ -145,151 +161,113 @@
                     <h2 class="cta__title">Join the Agricultural Revolution Today!</h2>
                     <div class="cta__form">
                         <input type="email" class="cta__input" placeholder="Email address">
-                        <button class="btn btn--dark">Subscribe</button>
+                        <button class="cta__button">
+                            <div class="cta__button-subscribe">Subscribe</div>
+                            <img src="./images/cta_arrow.svg" alt="arrow" class=
+                            "cta__form-arrow">
+                        </button>
                     </div>
                 </div>
-                <img src="https://placehold.jp/24/2d5a27/ffffff/1710x600.png?text=CTA+Background+Image" alt="" class="cta__bg">
+                <img src="./images/cta2.svg" alt="" class="cta__bg">
             </div>
         </section>
 
         <section class="information">
             <div class="information__inner">
-                <div class="logo">
-                    <img src="./images/logo.svg" alt="logo" class="logo information__logo">
-                    <p class="information__text">We are custom home builder located in Dallas, TX servicing Highland Park, 
-                        <span>Cultivo</span> & Preston Hollow!
-                    </p>
-                    <div class="information__icon">
-                        <img src="./images/facebook.svg" src="facebook" class="information__icon">
-                        <img src="./images/twitter.svg" src="twitter" class="information__icon">
-                        <img src="./images/instagram.svg" src="instagram" class="information__icon">
-                        <img src="./images/linkedin.svg" src="linkedin" class="information__icon">
+                <div class="information__inner--top">
+                    <div class="information__logo">
+                        <div class="information__logo--top">
+                            <img src="./images/logo.svg" alt="logo" class="logo information__logo-image">
+                            <p class="information__text">We are custom home builder located in Dallas, TX
+                                servicing Highland Park, 
+                                <span class="information__text--semibold">Cultivo</span> & Preston Hollow!
+                            </p>
+                        </div>
+                        <div class="information__icons">
+                            <img src="./images/facebook.svg" src="facebook" class="information__icon">
+                            <img src="./images/twitter.svg" src="twitter" class="information__icon">
+                            <img src="./images/instagram.svg" src="instagram" class="information__icon">
+                            <img src="./images/linkedin.svg" src="linkedin" class="information__icon">
+                        </div>
+                    </div>
+                    <div class="information__links">
+                        <div class="information__links-company">
+                            <h3 class="information__link-title">COMPANY</h3>
+                            <a href="#" class="information__links-company--item">Fatures</a>
+                            <a href="#" class="information__links-company--item">Pricing</a>
+                            <a href="#" class="information__links-company--item">About Us</a>
+                            <a href="#" class="information__links-company--item">Contact</a>
+                            <a href="#" class="information__links-company--item">Pricing</a>
+                        </div>
+                        <div class="information__links-resource">
+                            <h3 class="information__link-title">RESOURCE</h3>
+                            <a href="#" class="information__links-resource--item">Blog</a>
+                            <a href="#" class="information__links-resource--item">Customer Stores</a>
+                            <a href="#" class="information__links-resource--item">information--</a>
+                            <a href="#" class="information__links-resource--item">Legal</a>
+                            <a href="#" class="information__links-resource--item">Payments</a>
+                        </div>
+                        <div class="information__links-career">
+                            <h3 class="information__link-title">CAREER</h3>
+                            <a href="#" class="information__links-career--item">jobs</a>
+                            <a href="#" class="information__links-career--item">Hiring</a>
+                            <a href="#" class="information__links-career--item">News</a>
+                            <a href="#" class="information__links-career--item">Tips&Tricks</a>
+                        </div>
+                        <div class="information__links-help">
+                            <h3 class="information__link-title">HELP</h3>
+                            <a href="#" class="information__links-help--item">FAQ</a>
+                            <a href="#" class="information__links-help--item">Help Center</a>
+                            <a href="#" class="information__links-help--item">Support</a>
+                        </div>
                     </div>
                 </div>
-                <div class="information__links">
-                    <div class="information__links-company">
-                        <h3 class="information__title">COMPANY</h3>
-                        <a href="#" class="information__links-company--item">Fatures</a>
-                        <a href="#" class="information__links-company--item">Pricing</a>
-                        <a href="#" class="information__links-company--item">About Us</a>
-                        <a href="#" class="information__links-company--item">Contact</a>
-                        <a href="#" class="information__links-company--item">Pricing</a>
+                <div class="information__inner--bottom">
+                    <div class="information--bottom-left">
+                        <div class="information__text--bottom-left">
+                            <h2 class="information__heading--bottom">Get In Touch!</h2>
+                            <p class="information__text--bottom">have questions or need assistance? <br>We’re here to help!</p>
+                        </div>
+                        <div class="information--bottom-form">
+                            <input class="information--bottom-input" placeholder="Enter your email">
+                            <button class="btn information__btn--dark">Subscribe</button>
+                        </div>
                     </div>
-                    <div class="information__links-resource">
-                        <h3 class="information__title">RESOURCE</h3>
-                        <a href="#" class="information__links-resource--item">Blog</a>
-                        <a href="#" class="information__links-resource--item">Customer Stores</a>
-                        <a href="#" class="information__links-resource--item">Information</a>
-                        <a href="#" class="information__links-resource--item">Legal</a>
-                        <a href="#" class="information__links-resource--item">Payments</a>
-                    </div>
-                    <div class="information__links-career">
-                        <h3 class="information__title">CAREER</h3>
-                        <a href="#" class="information__links-career--item">jobs</a>
-                        <a href="#" class="information__links-career--item">Hiring</a>
-                        <a href="#" class="information__links-career--item">News</a>
-                        <a href="#" class="information__links-career--item">Tips&Tricks</a>
-                    </div>
-                    <div class="information__links-help">
-                        <h3 class="information__title">HELP</h3>
-                        <a href="#" class="information__links-help--item">FAQ</a>
-                        <a href="#" class="information__links-help--item">Help Center</a>
-                        <a href="#" class="information__links-help--item">Support</a>
+                    <div class="information--bottom-right">
+                        <div class="information--bottom-addresses">
+                            <div class="information--bottom-address">
+                                <strong class="information--bottom-address-header">ADDRESS</strong>
+                                <p class="information--bottom-address-text">1901 Thornridge Cir.<br>Shiloh, Hawaii 81063</p>
+                            </div>
+                            <div class="information--bottom-address">
+                                <strong class="information--bottom-address-header">ADDRESS</strong>
+                                <p class="information--bottom-address-text">1901 Thornridge Cir.<br>Shiloh, Hawaii</p>
+                            </div>
+                        </div>
+                        <div class="information--bottom-contacts">
+                            <div class="information--bottom-phone">
+                                <strong class="information--bottom-phone-header">PHONE</strong>
+                                <div class="information--bottom-phone-text">[303] 873-2983</div>
+                            </div>
+                            <div class="information--bottom-email">
+                                <strong class="information--bottom-email-header">EMAIL</strong>
+                                <div class="information--bottom-email-text">hallo.cultivo@gmail.com</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer__inner">
-            <div class="footer__left">
-                <h2 class="footer__heading">Get In Touch!</h2>
-                <p class="footer__text">have questions or need assistance? </p>
-                <p class="footer__text">We’re here to help!</p>
-                <div class="footer__form">
-                    <input class="type=text" class="footer__input" placeholder="Enter your help!">
-                    <button class="btn btn--dark">Subscribe</button>
-                </div>
-            </div>
-            <div class="footer__right">
-                <div class="footer__addresses">
-                    <div class="footer__address">
-                        <strong class="footer__address-header">ADDRESS</strong>
-                        <p class="footer__address-text">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                    <div class="footer__address">
-                        <strong class="footer__address-header">ADDRESS</strong>
-                        <p class="footer__address-text">1901 Thornridge Cir. Shiloh, Hawaii 81063</p>
-                    </div>
-                </div>
-                <div class="footer__contacts">
-                    <div class="footer__phone">
-                        <strong class="footer__phone-header">PHONE</strong>
-                        <div class="footer__phone-text">[303] 873-2983</div>
-                    </div>
-                    <div class="footer__email">
-                        <strong class="footer__phone-header">EMAIL</strong>
-                        <div class="footer__phone-text">hallo.Cultivo@gmail.com</div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <p class="footer__bottom-left">Copyright 2025.All Rights Reserved</p>
-                <div class="footer__bottom-right">
-                    <a href="#" class="footer__bottom-text">FAQ</a>
-                    <a href="#" class="footer__bottom-text">Term of Service</a>
-                    <a href="#" class="footer__bottom-text">Privacy Policy</a>
-                </div>
+    <footer class="section-footer">
+        <div class="footer__wrapper">
+            <p class="footer--left">&copy; Copyright 2025.All Rights Reserved</p>
+            <div class="footer--right">
+                <a href="#" class="footer__items">FAQ</a>
+                <a href="#" class="footer__items">Term of Service</a>
+                <a href="#" class="footer__items">Privacy Policy</a>
             </div>
         </div>
     </footer>
-        <!-- <section class="contact">
-            <div class="contact__inner">
-                <div class="contact__info">
-                    <h2 class="contact__heading">Get In Touch!</h2>
-                    <p class="contact__text">Have questions? Reach out to our expert team.</p>
-                    <div class="contact__form">
-                        <input type="text" class="contact__input" placeholder="Your message here...">
-                        <button class="btn btn--dark">Send</button>
-                    </div>
-                </div>
-                <div class="contact__details">
-                    <div class="contact__detail-item">
-                        <strong>Address</strong>
-                        <p>123 Farm Street, Agriculture Valley, USA</p>
-                    </div>
-                    <div class="contact__detail-item">
-                        <strong>Phone</strong>
-                        <p>+1 234 567 890</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer__inner">
-            <div class="footer__brand">
-                <div class="footer__logo">AgriFarm</div>
-                <p class="footer__tagline">Innovation for a sustainable future.</p>
-            </div>
-            <div class="footer__nav">
-                <div class="footer__column">
-                    <h4 class="footer__col-title">Company</h4>
-                    <a href="#" class="footer__link">About</a>
-                    <a href="#" class="footer__link">Solutions</a>
-                </div>
-                <div class="footer__column">
-                    <h4 class="footer__col-title">Resources</h4>
-                    <a href="#" class="footer__link">Blog</a>
-                    <a href="#" class="footer__link">Docs</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="footer__inner">
-                <p>&copy; 2024 AgriFarm. All rights reserved.</p>
-            </div>
-        </div>
-    </footer> -->
 </body>
 </html>
