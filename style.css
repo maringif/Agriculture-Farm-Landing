@@ -379,8 +379,8 @@ p {
 }
 .subscription__detail{
     position: absolute;
-    left: 80px;
-    top: 558px;
+    left: 5.1vw;
+    top: 75.1%;
     display: flex;
     justify-content: space-between;
     width: calc(100% - 160px);
