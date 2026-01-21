@@ -19,13 +19,15 @@
             </div>
             <ul class="header__list">
                 <li class="header__item"><a href="#" class="header__link"><img src="./images/home.svg" alt="home" class="header__icon-home">Home</a></li>
-                <li class="header__item"><a href="#" class="header__link">About Us</a></li>
-                <li class="header__item"><a href="#" class="header__link">Solutions</a></li>
-                <li class="header__item"><a href="#" class="header__link">Investors</a></li>
+                <li class="header__item"><a href="#solutions" class="header__link">About Us</a></li>
+                <li class="header__item"><a href="#subscription" class="header__link">Solutions</a></li>
+                <li class="header__item"><a href="#information" class="header__link">Investors</a></li>
             </ul>
             <div class="header__actions">
-                <a href="/login" class="header__link--sign-in">Sign In</a>
-                <button type="button" class="btn btn--primary">Sign up Free</button>
+                <a href="#cta" class="header__link--sign-in">Sign In</a>
+                <a href="#cta" class="header__link--sign-in-2">
+                    <button type="button" class="btn btn--primary">Sign up Free</button>
+                </a>
             </div>
         </div>
     </header>
@@ -36,7 +38,7 @@
                 <p class="hero__subtitle"><span class="hero__subtitle--green"></span>Top Notch Webinar Platform</p>
                 <h1 class="hero__title">Regenerating The Earth <br> With Nano-Biotechnology</h1>
                 <div class="hero__button">
-                    <button class="btn hero__btn--dark">Get Started <img src="./images/hero_Arrow.svg" alt="arrow" class="hero__image-arrow"></button>
+                    <a href="#cta" class="btn hero__btn--dark">Get Started <img src="./images/hero_Arrow.svg" alt="arrow" class="hero__image-arrow"></a>
                 </div>
             </div>
             <div class="hero__image-unit">
@@ -69,7 +71,7 @@
             </div>
         </section>
 
-        <section class="solutions">
+        <section id="solutions" class="solutions">
             <div class="solutions__inner">
                 <div class="solutions__header">
                     <h2 class="solutions__heading">Next-Gen Solutions For <br> Optimal Crop Growth</h2>
@@ -114,7 +116,7 @@
             </div>
         </section>
 
-        <section class="subscription">
+        <section id="subscription" class="subscription">
             <div class="subscription__inner">
                 <img src="./images/subscription_farm.svg" alt="Main Visual" class="subscription__overlap-image">
                 <h2 class="subscription__title">Collaborate and learn from industry experts and enthusiasts</h2>
@@ -123,8 +125,10 @@
                         <img src="./images/subscription_location.svg" class="subscription__image-map">
                         <p class="subscription__map">Ponorogo, Indonesia</p>
                     </div>
-                    <button class="subscription__detail--right">Get Started<img src="./images/subscription_arrow.svg" class="subscription__img-arrow"></button>
-                </div>
+                    <a href="#cta" class="subscription__detail-a--right">
+                        <button class="subscription__detail--right">Get Started<img src="./images/subscription_arrow.svg" class="subscription__img-arrow"></a>
+                    </a>
+                    </div>
             </div>
         </section>
 
@@ -155,14 +159,14 @@
             </div>
         </section>
         
-        <section class="cta">
+        <section id="cta" class="cta">
             <div class="cta__inner">
                 <div class="cta__content">
                     <h2 class="cta__title">Join the Agricultural Revolution Today!</h2>
                     <div class="cta__form">
                         <input type="email" class="cta__input" placeholder="Email address">
                         <button class="cta__button">
-                            <div class="cta__button-subscribe">Subscribe</div>
+                            <a href="#" class="cta__button-subscribe">Subscribe</a>
                             <img src="./images/cta_arrow.svg" alt="arrow" class=
                             "cta__form-arrow">
                         </button>
@@ -172,7 +176,7 @@
             </div>
         </section>
 
-        <section class="information">
+        <section id="information" class="information">
             <div class="information__inner">
                 <div class="information__inner--top">
                     <div class="information__logo">
@@ -184,10 +188,18 @@
                             </p>
                         </div>
                         <div class="information__icons">
-                            <img src="./images/facebook.svg" src="facebook" class="information__icon">
-                            <img src="./images/twitter.svg" src="twitter" class="information__icon">
-                            <img src="./images/instagram.svg" src="instagram" class="information__icon">
-                            <img src="./images/linkedin.svg" src="linkedin" class="information__icon">
+                            <a href="#">
+                                <img src="./images/facebook.svg" src="facebook" class="information__icon">
+                            </a>
+                            <a href="#">
+                                <img src="./images/twitter.svg" src="twitter" class="information__icon">
+                            </a>
+                            <a href="#">
+                                <img src="./images/instagram.svg" src="instagram" class="information__icon">
+                            </a>
+                            <a href="#">
+                                <img src="./images/linkedin.svg" src="linkedin" class="information__icon">
+                            </a>
                         </div>
                     </div>
                     <div class="information__links">
